@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Job Tracker</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="application-stats-container">
+      <div class="totalbox">
+        <h3 class="label-format">Total Applications:</h3>
+        <h1 id="totalAppCount" class="value-format"></h1>
+      </div>
+    </div>
+
+    <div class="input-applications-container">
+      <div class="input-field">
+        <label class="input-label">Company Name:</label>
+        <input id="company-name" type="text" placeholder="Company Name" />
+      </div>
+      <div class="input-field">
+        <label class="input-label">Job Title:</label>
+        <input id="job-title" type="text" placeholder="Job Title" />
+      </div>
+      <div class="input-field">
+        <label class="input-label">Job Posting Link:</label>
+        <input
+          id="job-posting-link"
+          type="url"
+          placeholder="Job Posting Link"
+        />
+      </div>
+      <button id="addButton" type="submit" class="add-button">
+        Add Job Application
+      </button>
+    </div>
+    <div class="list-of-applications-container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
